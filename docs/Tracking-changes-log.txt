@@ -1,0 +1,21 @@
+Default-Code:-
+---------------------
+src/app/
+---------------------
+app.component.css
+app.component.html
+app.component.ts
+---------------------
+index.html
+---------------------
+app-routing.module.ts
+app.module.ts
+---------------------
+styles.css
+-----------------------------------------------------------
+/assets (default-folder with empty for static contetnt etc)
+-----------------------------------------------------------
+===========================================================
+---------------------------------------------------------------------------------
+So lets change above and write below points so pusing as now defaulted-code-only.
+---------------------------------------------------------------------------------
