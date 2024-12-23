@@ -36,6 +36,8 @@ By default, the app will be available at http://localhost:4200/.
 - The link to the **Netlify Live Demo** is now highlighted with an emoji 🌐 for added visual emphasis.
 - The link is formatted as a clickable hyperlink: `[🌐 Live Demo on Netlify](https://celebrated-palmier-d95a0c.netlify.app/)`.
 
+https://celebrated-palmier-d95a0c.netlify.app/
+
 ### Instructions:
 1. Copy the updated content above.
 2. Go to your GitHub repository (or any web page where you'd like to include this).
