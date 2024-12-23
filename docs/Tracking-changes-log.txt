@@ -19,3 +19,39 @@ styles.css
 ---------------------------------------------------------------------------------
 So lets change above and write below points so pusing as now defaulted-code-only.
 ---------------------------------------------------------------------------------
+So adding one-by-one lets go:-
+------------------------------
+app.component.html ---> So all code replaced with links to app route but not setup so just shows verticval links when we launch the app.
+------------------------------
+1.	Generate components using Angular CLI (e.g., ng generate component Header, ng generate component Footer, etc.).
+2.	Declare and import the generated components in app.module.ts.
+3.	Configure routing in app.module.ts using RouterModule.forRoot() for each route.
+4.	Update app.component.html to include the components (like <app-header></app-header>, <app-footer></app-footer>) and <router-outlet></router-outlet> for routing.
+------------------------------
+Certainly! Below is an explanation of what each part of the process does, including the command and the content in the styles.css file, with comments explaining their purpose.
+1. Install Bootstrap via npm
+bash:-
+npm install bootstrap
+-------------------------------
+1. Using --legacy-peer-deps
+One quick way to bypass the issue is to install the dependencies while ignoring peer dependency conflicts using the --legacy-peer-deps flag.
+
+Run this command:
+bash:-
+npm install bootstrap --legacy-peer-deps
+
+What this does: This command installs Bootstrap 
+but ignores the peer dependency conflicts that npm is reporting. 
+It can often solve issues caused by mismatched peer dependencies 
+without requiring you to fix the underlying version mismatch.
+-------------------------------------------------------------------
+Yes i replaced styles.css again now 
+yes this file styles are applied now as of this sequnce works 
+and applied some css styling lets see and explore from now onwards.
+-------------------------------------------------------------------
+
+
+
+
+
+

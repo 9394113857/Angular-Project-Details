@@ -3,16 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { FlaskComponent } from './flask/flask.component';
+import { DjangoComponent } from './django/django.component';
+import { APIComponent } from './api/api.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
+// NgModule is a decorator:
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    FlaskComponent,
+    DjangoComponent,
+    APIComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // Custom imported list here:-
+    
   ],
-  providers: [],
+  providers: [], // add providers list here
   bootstrap: [AppComponent]
 })
 export class AppModule { }
