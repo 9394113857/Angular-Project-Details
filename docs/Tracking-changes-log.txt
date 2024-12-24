@@ -34,7 +34,8 @@ bash:-
 npm install bootstrap
 -------------------------------
 1. Using --legacy-peer-deps
-One quick way to bypass the issue is to install the dependencies while ignoring peer dependency conflicts using the --legacy-peer-deps flag.
+One quick way to bypass the issue is to install the dependencies 
+while ignoring peer dependency conflicts using the --legacy-peer-deps flag.
 
 Run this command:
 bash:-
@@ -49,6 +50,13 @@ Yes i replaced styles.css again now
 yes this file styles are applied now as of this sequnce works 
 and applied some css styling lets see and explore from now onwards.
 -------------------------------------------------------------------
+// Not sure just in my flow from laptop workings chatgpt says these so installing like that:-
+npm install @angular/forms @angular/common @angular/platform-browser
+npm install @angular/common/http
+-------------------------------------------------------------------
+
+
+
 
 
 

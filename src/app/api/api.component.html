@@ -1,24 +1,36 @@
-<!-- <form [formGroup]="userInputForm">
-    <input type="number" formControlName="userInput" min="1" max="50">
-    <button class="btn btn-primary" (click)="updateDataCount()">Get</button>
-  </form>
-  
-  <div *ngIf="data.length > 0">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Name</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let product of data" class="table-row">
-          <td>{{ product.id }}</td>
-          <td>{{ product.title }}</td>
-          <td>{{ product.price }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-   -->
+<!-- User input form -->
+<form [formGroup]="userInputForm" class="form-group">
+  <!-- Input field for user to specify the number of items to fetch -->
+  <label for="userInput">Enter number (1-50):</label>
+  <input
+    id="userInput"
+    type="number"
+    formControlName="userInput" <!-- Binds the input field to the reactive form -->
+    class="form-control"
+    min="1"
+    max="50"
+    placeholder="Enter a number"
+  />
+  <!-- Button to trigger data fetching -->
+  <button type="button" class="btn btn-primary mt-3" (click)="updateDataCount()">Get Data</button>
+</form>
+
+<!-- Displays the data in a table if data exists -->
+<div *ngIf="data.length > 0" class="mt-4">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of data">
+        <td>{{ product.id }}</td>
+        <td>{{ product.title }}</td>
+        <td>{{ product.price | currency }}</td> <!-- Formats the price as currency -->
+      </tr>
+    </tbody>
+  </table>
+</div>
